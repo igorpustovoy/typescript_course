@@ -42,14 +42,18 @@ class DataStorage {
     }
 }
 const textStorage = new DataStorage();
-textStorage.addItem('Max');
-textStorage.addItem('Manu');
-textStorage.removeItem('Max');
+textStorage.addItem("Max");
+textStorage.addItem("Manu");
+textStorage.removeItem("Max");
 console.log(textStorage.getItems());
 const numberStorage = new DataStorage();
-// const objStorage = new DataStorage<object>();
-// const maxObj = {name: 'Max'}
-// objStorage.addItem(maxObj);
-// objStorage.addItem({name: 'Manu'});
-// objStorage.removeItem(maxObj);
-// console.log(objStorage.getItems());
+function createCourseGoal(title, description, date) {
+    // return { title, description, completeUntil: date};
+    let courseGoal = {};
+    courseGoal.title = title;
+    courseGoal.description = description;
+    courseGoal.completeUntil = date;
+    return courseGoal;
+}
+const names = ['Max', 'Anna'];
+// names.push('Manu');
