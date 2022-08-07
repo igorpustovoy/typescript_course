@@ -13,7 +13,7 @@ module.exports = {
             directory: path.join(__dirname, '/')
         }
     },
-    devtool: 'hidden-source-map',
+    devtool: 'hidden-source-map', //??
     module: {
         rules: [
             {
