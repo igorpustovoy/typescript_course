@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+    cache: false,
     mode: 'development',
     entry: './src/app.ts',
     output: {
@@ -10,10 +11,10 @@ module.exports = {
     },
     devServer: {
         static: {
-            directory: path.join(__dirname, '/'),
-            // publicPath: '/dist/'
+            directory: path.join(__dirname, '/')
         }
     },
+    watch: true,
     devtool: 'inline-source-map',
     module: {
         rules: [
